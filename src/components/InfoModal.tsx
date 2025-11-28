@@ -1,10 +1,11 @@
+import type { ReactNode } from 'react';
 import './InfoModal.css';
 
 interface InfoModalProps {
   isOpen: boolean;
   onClose: () => void;
   title: string;
-  content: React.ReactNode;
+  content: ReactNode;
 }
 
 const InfoModal = ({ isOpen, onClose, title, content }: InfoModalProps) => {
