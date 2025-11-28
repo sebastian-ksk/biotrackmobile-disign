@@ -5,4 +5,12 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: '/biotrackmobile-disign/',
+  server: {
+    host: true,
+    allowedHosts: [
+      'web-i4xyg02l5szk.up-de-fra1-k8s-1.apps.run-on-seenode.com',
+      'localhost',
+      '.github.io',
+    ],
+  },
 })
