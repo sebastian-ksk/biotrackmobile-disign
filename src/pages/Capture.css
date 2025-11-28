@@ -1,0 +1,280 @@
+.capture-container {
+  padding: 1rem;
+  max-width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+.capture-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.capture-header h1 {
+  font-size: 1.75rem;
+  color: var(--primary-color);
+  margin: 0;
+}
+
+.capture-header .btn {
+  width: auto;
+  padding: 0.75rem 1.5rem;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--text-secondary);
+}
+
+.empty-state p {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.empty-state-subtitle {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.captures-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.capture-card {
+  background: var(--surface);
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.capture-card:active {
+  transform: scale(0.98);
+}
+
+.capture-card-header {
+  margin-bottom: 0.75rem;
+}
+
+.capture-card-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.capture-card-title {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.capture-icon {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.capture-card-title h3 {
+  font-size: 1.125rem;
+  color: var(--text-primary);
+  margin: 0 0 0.25rem 0;
+}
+
+.capture-meta {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.capture-badge {
+  background: var(--background);
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.capture-description {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin: 0.75rem 0;
+  line-height: 1.5;
+}
+
+.capture-photos {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0.75rem 0;
+  flex-wrap: wrap;
+}
+
+.capture-photo-thumb {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+
+.capture-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.capture-coords {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.capture-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn-icon {
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.btn-icon:hover {
+  background: var(--background);
+}
+
+.btn-icon:active {
+  transform: scale(0.9);
+}
+
+.capture-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.form-section {
+  background: var(--surface);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow);
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.form-section h2 {
+  font-size: 1.25rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 0.5rem;
+}
+
+.form-section h3 {
+  font-size: 1rem;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-row .form-group {
+  min-width: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-row .input {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.gps-display {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem;
+  background: var(--background);
+  border-radius: 8px;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.photos-preview {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.photo-thumbnail {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+
+textarea.input {
+  resize: vertical;
+  min-height: 100px;
+  font-family: inherit;
+}
+
+.form-group {
+  width: 100%;
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+.input {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 480px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .capture-container {
+    padding: 0.75rem;
+  }
+  
+  .form-section {
+    padding: 1rem;
+  }
+}
+
